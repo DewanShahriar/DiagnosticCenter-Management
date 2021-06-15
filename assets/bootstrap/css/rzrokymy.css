@@ -1,0 +1,493 @@
+
+
+#second-menu {
+    background-color: #222D32;
+}
+
+#second-menu h4 {
+    background-color: #3c8dbc;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+#second-menu h4 i {
+    font-size: 18px;
+}
+
+#second-menu ul li a {
+    color: #b8c7ce;
+}
+
+#second-menu ul li a:hover {
+    color: #FFF;
+}
+
+#second-menu ul li ul {
+    background-color: #2C3B41;
+}
+
+#second-menu ul li ul li a:hover {
+    color: #fff;
+}
+
+#second-menu ul {
+    background-color: #222D32;
+}
+
+
+/* The container */
+
+.rz_checkbox_lebel {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 35px;
+    padding-top: 3px;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.rz_checkbox_lebel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.rz_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.rz_checkbox_lebel:hover input~.rz_checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.rz_checkbox_lebel input:checked~.rz_checkmark {
+    background-color: teal;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.rz_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.rz_checkbox_lebel input:checked~.rz_checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.rz_checkbox_lebel .rz_checkmark:after {
+    left: 10px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rz_selected {
+    box-shadow: 0px 12px 22px 1px #f20314;
+    border-radius: 10px;
+}
+
+.rzgallery {
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid #bdbdc2;
+}
+
+.rzimg-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.rzimg-wrap .rzclose {
+    position: absolute;
+    top: 2px;
+    z-index: 100;
+    background-color: #EF0A0A;
+    padding: 5px 4px 5px;
+    color: #f3f0f0;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .1;
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
+}
+
+.rzimg-wrap:hover .rzclose {
+    opacity: 1;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-top: 0px;
+    background-color: #367fa9;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 5%;
+    top: 80px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        top: 80px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 80px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        top: 80px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        top: 80px;
+        opacity: 1;
+    }
+    to {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.padding5px_each_td td {
+    padding: 5px;
+}
+
+.contact_text_shadow {
+    padding: 10px 5px 0px 5px;
+    color: #096cb4;
+    text-shadow: 0px 0px 1px gray;
+}
+
+.inner_shadow_red {
+    -moz-box-shadow: inset 0 0 10px #fba699;
+    -webkit-box-shadow: inset 0 0 10px #fba699;
+    box-shadow: inset 0 0 10px #fba699;
+}
+
+.inner_shadow_info {
+    -moz-box-shadow: inset 0 0 10px #00c0ef;
+    -webkit-box-shadow: inset 0 0 10px #00c0ef;
+    box-shadow: inset 0 0 10px #00c0ef;
+}
+
+.inner_shadow_teal_a {
+    -moz-box-shadow: inset 0 0 10px #449BB5;
+    -webkit-box-shadow: inset 0 0 10px #449BB5;
+    box-shadow: inset 0 0 10px #449BB5;
+}
+
+.inner_shadow_green {
+    -moz-box-shadow: inset 0 0 10px #8ee18e;
+    -webkit-box-shadow: inset 0 0 10px #8ee18e;
+    box-shadow: inset 0 0 10px #8ee18e;
+}
+
+.inner_shadow_orange {
+    -moz-box-shadow: inset 0 0 10px #fbb87f;
+    -webkit-box-shadow: inset 0 0 10px #fbb87f;
+    box-shadow: inset 0 0 10px #fbb87f;
+}
+
+.inner_shadow_purple {
+    -moz-box-shadow: inset 0 0 10px #6865a2;
+    -webkit-box-shadow: inset 0 0 10px #6865a2;
+    box-shadow: inset 0 0 10px #6865a2;
+}
+
+.inner_shadow_primary {
+    -moz-box-shadow: inset 0 0 10px #337ab7;
+    -webkit-box-shadow: inset 0 0 10px #337ab7;
+    box-shadow: inset 0 0 10px #337ab7;
+}
+
+.inner_shadow_teal {
+    -moz-box-shadow: inset 0 0 10px #0a96b9;
+    -webkit-box-shadow: inset 0 0 10px #0a96b9;
+    box-shadow: inset 0 0 10px #0a96b9;
+}
+
+.inner_shadow_6a8d9d {
+    -moz-box-shadow: inset 0 0 10px #6a8d9d;
+    -webkit-box-shadow: inset 0 0 10px #6a8d9d;
+    box-shadow: inset 0 0 10px #6a8d9d;
+}
+
+.table_th_orange th {
+    background: #d87c2b!important;
+    border: 1px solid #d87c2b!important;
+    color: white;
+}
+
+.table_th_orange.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #e7dcd3;
+}
+
+.table_th_maroon th {
+    background: #dd4b39!important;
+    border: 1px solid #dd4b39!important;
+    color: white;
+}
+
+.table_th_maroon.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #f0b2a2;
+}
+
+.table_th_teal th {
+    background: teal!important;
+    border: 1px solid teal!important;
+    color: white;
+}
+
+.table_th_teal.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #ccf0f0;
+}
+
+.table_th_purple th {
+    background: #605ca8!important;
+    border: 1px solid #605ca8!important;
+    color: white;
+}
+
+.table_th_purple.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #cdcbed;
+}
+
+.table_th_danger th {
+    background: #f96a59 !important;
+    border: 1px solid #f96a59 !important;
+    color: black;
+}
+
+.table_th_danger.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #f96a59;
+}
+
+.table_th_teal_a th {
+    background: #449BB5!important;
+    border: 1px solid #449BB5!important;
+    color: white;
+}
+
+.table_th_teal_a.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #449BB5;
+}
+
+.table_th_primary th {
+    background: #337ab7!important;
+    border: 1px solid #337ab7!important;
+    color: white;
+}
+
+.table_th_primary.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #d9e7f3;
+}
+
+.table_th_info th {
+    background: #00c0ef!important;
+    border: 1px solid #00c0ef!important;
+    color: white;
+}
+
+.table_th_info.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #ace4f2;
+}
+
+.table_th_success th {
+    background: #00a65a!important;
+    border: 1px solid #00a65a!important;
+    color: white;
+}
+
+.table_th_success.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #ddece5;
+}
+
+.table_th_6A8D9D th {
+    background: #6A8D9D!important;
+    border: 1px solid #6A8D9D!important;
+    color: white;
+}
+
+.table_th_6A8D9D.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: #e1e7ea;
+}
+
+.box-6a8d9d .box-header {
+    background-color: #6a8d9d!important;
+    color: white!important;
+}
+
+.box-6a8d9d {
+    border: 1px solid #6a8d9d!important;
+}
+
+.box-purple .box-header {
+    background-color: #605CA8!important;
+    color: white!important;
+}
+
+.box-purple {
+    border: 1px solid #605CA8!important;
+}
+
+.box-teal .box-header {
+    background-color: teal!important;
+    color: white!important;
+}
+
+.box-teal {
+    border: 1px solid teal!important;
+}
+
+.btn-white {
+    background-color: #6A8D9D;
+    border-color: #fff;
+    color: white;
+}
+
+.btn-white:hover {
+    background-color: #6A8D9D!important;
+    border-color: #fff!important;
+    color: white!important;
+}
+
+.btn-danger2 {
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    color: white;
+}
+
+.btn-danger2:hover {
+    background-color: white!important;
+    border-color: #dd4b39!important;
+    color: #dd4b39!important;
+}
+
+.btn-6a8d9d {
+    background-color: #6a8d9d;
+    border-color: #6a8d9d;
+    color: white;
+}
+
+.btn-6a8d9d:hover {
+    background-color: white!important;
+    border-color: #6a8d9d!important;
+    color: #6a8d9d!important;
+}
+
+.rz_c_tab li a,
+.rz_c_tab li a:hover {
+    color: white !important;
+}
+
+.rz_c_tab .active a,
+.rz_c_tab .active a:hover {
+    color: #444 !important;
+}
+
+.bg-green.active {
+    border-top-color: green!important;
+}
+
+.bg-orange.active {
+    border-top-color: orange!important;
+}
+
+.bg-purple.active {
+    border-top-color: #605ca8!important;
+}
+
+.bg-teal {
+    background-color: teal!important;
+}
+
+.bg-teal.active { 
+    border-top-color: teal!important;
+}
+
+input[type='number'] {
+    -webkit-appearance: textfield;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
